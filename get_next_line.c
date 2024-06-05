@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:06:31 by claprand          #+#    #+#             */
-/*   Updated: 2024/06/04 14:01:18 by claprand         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:51:18 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ static char	*read_to_str(int fd, char *str)
 	char	*buf;
 	int		nbytes;
 
-	buf = malloc((BUFFER_SIZE + 2) * sizeof(char));
+	buf = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buf)
 		return (NULL);
 	nbytes = 1;

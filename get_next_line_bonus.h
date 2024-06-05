@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:05:52 by claprand          #+#    #+#             */
-/*   Updated: 2024/06/04 13:57:41 by claprand         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:49:54 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # endif
 
 # ifndef FD_MAX
-#  define FD_MAX 100
+#  define FD_MAX 1024
 # endif
 
 char	*get_next_line(int fd);

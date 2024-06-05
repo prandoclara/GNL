@@ -6,7 +6,7 @@
 /*   By: claprand <claprand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 11:06:31 by claprand          #+#    #+#             */
-/*   Updated: 2024/06/04 13:50:49 by claprand         ###   ########.fr       */
+/*   Updated: 2024/06/05 12:48:37 by claprand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static char	*get_line_to_return(char *str)
 		return (NULL);
 	while (str[i] && str[i] != '\n')
 		i++;
-	final_line = (char *)malloc(sizeof(char) * (i + 2));
+	final_line = (char *)malloc(sizeof(char) * (i + (str[i] == '\n') + 1));
 	if (!final_line)
 		return (NULL);
 	i = 0;
